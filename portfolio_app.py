@@ -82,7 +82,7 @@ with col2:
 
 # Profile Section
 st.markdown("---")
-col1, col2 = st.columns([1, 2])
+col2 = st.columns([1])
 
 
 with col2:
@@ -110,7 +110,7 @@ st.markdown("---")
 st.markdown('<div class="section-header">🚀 Featured Projects</div>', unsafe_allow_html=True)
 
 # Project 1 - Grocery Application
-col1, = st.columns([1])
+col1, col2 = st.columns([1, 2])
 
 with col1:
     st.markdown("""
@@ -198,6 +198,7 @@ with col3:
 st.markdown("---")
 
 # Contact Section
+
 
 
 
