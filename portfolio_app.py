@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 from PIL import Image
 
 # Page Configuration
@@ -237,6 +237,7 @@ st.markdown("""
     <p>© 2026 All Rights Reserved</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
