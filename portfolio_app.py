@@ -1,4 +1,4 @@
-import streamlit as st
+mport streamlit as st
 from PIL import Image
 
 # Page Configuration
@@ -82,8 +82,14 @@ with col2:
 
 # Profile Section
 st.markdown("---")
-col2 = st.columns([2])
+col1, col2 = st.columns([1, 2])
 
+with col1:
+    try:
+        img = Image.open("profile_pic.png")
+        st.image(img, width=300, use_column_width=True)
+    except:
+        st.info("📷 Profile picture will appear here")
 
 with col2:
     st.markdown('<div class="section-header">About Me</div>', unsafe_allow_html=True)
@@ -110,7 +116,7 @@ st.markdown("---")
 st.markdown('<div class="section-header">🚀 Featured Projects</div>', unsafe_allow_html=True)
 
 # Project 1 - Grocery Application
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown("""
@@ -198,6 +204,44 @@ with col3:
 st.markdown("---")
 
 # Contact Section
+st.markdown('<div class="section-header">📬 Get In Touch</div>', unsafe_allow_html=True)
+
+contact_col1, contact_col2, contact_col3 = st.columns(3)
+
+with contact_col1:
+    st.markdown("""
+    ### 📧 Email
+    Want to collaborate or have a question?
+    Feel free to reach out!
+    """)
+
+with contact_col2:
+    st.markdown("""
+    ### 💼 GitHub
+    Check out my repositories and
+    contributions on GitHub
+    """)
+
+with contact_col3:
+    st.markdown("""
+    ### 🌐 Portfolio
+    Explore my projects and
+    see what I've built
+    """)
+
+# Footer
+st.markdown("---")
+st.markdown("""
+<div style='text-align: center; color: #666; padding: 2rem;'>
+    <p>Made with ❤️ by Ammar using Streamlit</p>
+    <p>© 2026 All Rights Reserved</p>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
 
 
 
