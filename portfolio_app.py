@@ -85,12 +85,11 @@ st.markdown("---")
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    try:
-        img = Image.open("profile_pic.png")
-        st.image(img, width=300, use_column_width=True)
-    except:
-        st.info("📷 Profile picture will appear here")
-
+    st.markdown("""
+    <div style='text-align: center; padding: 2rem;'>
+        <div style='font-size: 180px;'>👨‍💻</div>
+    </div>
+    """, unsafe_allow_html=True)
 with col2:
     st.markdown('<div class="section-header">About Me</div>', unsafe_allow_html=True)
     st.markdown("""
@@ -237,6 +236,7 @@ st.markdown("""
     <p>© 2026 All Rights Reserved</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
