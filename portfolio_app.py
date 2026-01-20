@@ -82,7 +82,7 @@ with col2:
 
 # Profile Section
 st.markdown("---")
-col2 = st.columns([1])
+col2 = st.columns([2])
 
 
 with col2:
@@ -198,6 +198,7 @@ with col3:
 st.markdown("---")
 
 # Contact Section
+
 
 
 
