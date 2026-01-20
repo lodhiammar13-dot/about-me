@@ -84,12 +84,6 @@ with col2:
 st.markdown("---")
 col1, col2 = st.columns([1, 2])
 
-with col1:
-    try:
-        img = Image.open("C:\\Users\\sarfa\\Downloads\\person.png")
-        st.image(img, width=300, use_column_width=True)
-    except:
-        st.info("📷 Profile picture will appear here")
 
 with col2:
     st.markdown('<div class="section-header">About Me</div>', unsafe_allow_html=True)
@@ -204,6 +198,7 @@ with col3:
 st.markdown("---")
 
 # Contact Section
+
 
 
 
